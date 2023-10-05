@@ -33,6 +33,12 @@
             width: 80%;
             justify-content: space-between;
             text-align: center;
+            border-radius: 50px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
         }
         header h1 {
             font-size: clamp(1.125rem, 0.75rem + 1.5vw, 1.875rem);
@@ -52,7 +58,7 @@
         #about {
             display: flex;
             flex-direction: row;
-            width: 80%;
+            width: 60%;
         }
         #about .left, #about .right {
             width: 50%;
@@ -62,6 +68,11 @@
             align-items: center;
             text-align: justify;
         }
+        #projects, #contact, #about {
+            background-color: #dfdfdf29;
+            border-radius: 50px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.116);
+        }
         img.profile-pic {
             width: 200px;
             height: auto;
@@ -69,6 +80,9 @@
             display: block;
         }
         @media (max-width: 600px) {
+            header nav {
+            display: block;
+        }
             #about {
             flex-direction: column;
             }
